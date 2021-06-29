@@ -1,0 +1,156 @@
+.app__sidebar {
+  font-size: 1.5rem;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 25px 15px;
+  box-shadow: 0 0 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__avatar {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.sidebar__title {
+  font-size: 1.7rem;
+  background-color: #f1f1f1;
+  border-radius: 3rem;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__name {
+  font-family: Kaushan Script;
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+.sidebar__name > span {
+  color: var(--color-background-primary);
+}
+
+.sidebar__item {
+  margin-bottom: 1.7rem;
+  padding-top: 0.6rem;
+  height: 4rem;
+}
+
+.sidebar__icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.sidebar__resume {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.7rem;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+.sidebar__resume:hover {
+  background-color: #f1f1f1;
+  border-radius: 3rem;
+}
+
+.sidebar__social-icons .sidebar__icon {
+  margin-right: 1rem;
+}
+
+.sidebar__location-email {
+  background-color: #f1f1f1;
+  align-self: stretch;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  margin-left: -0.5rem;
+}
+
+.sidebar__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar__location > span {
+  font-size: 1.6rem;
+}
+
+.sidebar__email {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.sidebar__phone {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__contact {
+  width: 60%;
+  margin-top: 4rem;
+  padding: 0.8rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-background-primary),
+    var(--color-background-secondary)
+  );
+  border-radius: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.sidebar__contact > a,
+.sidebar__contact > a:hover {
+  color: #fff;
+}
+
+.sidebar__contact:hover {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-background-secondary),
+    var(--color-background-primary)
+  );
+  transform: scale(1.1) translateY(-0.5rem);
+  box-shadow: 0 0 5px black;
+}
+
+.contact-form .form-control {
+  font-size: 1.3rem !important;
+}
+
+.contact-form__label {
+  font-size: 1.3rem !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form__textarea {
+  height: 10rem;
+  border: 1px solid var(--color-background-secondary);
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+}
+
+.contact-form__button {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 991px) {
+  .app__main-content {
+    margin: 3rem 0;
+  }
+}

@@ -1,0 +1,54 @@
+.resume {
+  height: 76vh;
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+  overflow-y: auto;
+}
+
+.resume__language-tools {
+  padding-top: 0.8rem;
+}
+
+.resume-card__heading,
+.resume-language__heading {
+  color: #354538;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.resume-card__body {
+  margin-top: 1rem;
+}
+
+.resume-card__name {
+  font-size: 1.4rem;
+}
+
+.resume-card__details {
+  font-size: 1.4rem;
+  padding-top: 2rem;
+}
+
+.bar {
+  width: 90%;
+  border-radius: 2rem;
+  margin-bottom: 1.2rem;
+  background-color: #f1f2f3;
+}
+
+.bar__wrapper {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-background-primary),
+    var(--color-background-secondary)
+  );
+  border-radius: 2rem;
+  padding: 0.4rem 1.4rem;
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+.bar__icon {
+  height: 2rem;
+  width: 2rem;
+}
