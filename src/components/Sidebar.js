@@ -8,9 +8,9 @@ import facebook from "../assets/icons/facebook.svg";
 import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
 import tie from "../assets/icons/tie.svg";
-import mightycoder from "../assets/mighty-coder.svg";
+import profile from "../assets/profile.jpeg";
 
-import resume from "../assets/resume.pdf";
+import resume from "../assets/Debjit Majumder.pdf";
 
 import "./Sidebar.css";
 
@@ -129,13 +129,17 @@ function Sidebar() {
     <>
       <div className="app__sidebar">
         <div>
-          <img src={mightycoder} alt="avatar" className="sidebar__avatar" />
+          <img src={profile} alt="avatar" className="sidebar__avatar" />
         </div>
         <div className="sidebar__name">
           Debjit <span>Majumder</span>
         </div>
         <div className="sidebar__item sidebar__title">Web Developer</div>
-        <a href={resume} download="resume.pdf" className="sidebar__resume">
+        <a
+          href={resume}
+          download="Debjit Majumder.pdf"
+          className="sidebar__resume"
+        >
           <img src={tie} alt="Icon" className="sidebar__icon" />{" "}
           <span>Download Resume</span>
         </a>
