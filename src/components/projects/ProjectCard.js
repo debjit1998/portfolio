@@ -5,7 +5,9 @@ function ProjectCard({ p: { name, image, github } }) {
   return (
     <div className="col-md-6 projectcard">
       <figure className="projectcard__wrapper">
-        <img src={image} alt="project" className="projectcard__image" />
+        <div className="projectcard__image-container">
+          <img src={image} alt="project" className="projectcard__image" />
+        </div>
         <div className="projectcard__title">
           <a
             href={github}

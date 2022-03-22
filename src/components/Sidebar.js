@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { Modal, Button } from "antd";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
+import { ReactComponent as LinkedinSVG } from "../assets/icons/linkedin.svg";
+import { ReactComponent as GithubSVG } from "../assets/icons/github.svg";
 
-import facebook from "../assets/icons/facebook.svg";
-import github from "../assets/icons/github.svg";
 import pin from "../assets/icons/pin.svg";
 import tie from "../assets/icons/tie.svg";
 import profile from "../assets/profile.jpeg";
 
-import resume from "../assets/Debjit Majumder.pdf";
+import resume from "../assets/DEBJIT.MAJUMDER.pdf";
 
 import "./Sidebar.css";
 
@@ -145,21 +145,21 @@ function Sidebar() {
         </a>
 
         <figure className="sidebar__social-icons sidebar__item">
-          <a href="!#">
-            <img
-              src={facebook}
-              title="facebook"
-              alt="facebook"
-              className="sidebar__icon"
+          <a
+            href="https://www.linkedin.com/in/debjit-majumder-33aaa7193/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedinSVG
+              style={{ fill: "#00F260", height: "35px", width: "35px" }}
             />
           </a>
-          <a href="!#">
-            <img
-              title="github"
-              src={github}
-              alt="github"
-              className="sidebar__icon"
-            />
+          <a
+            href="https://github.com/debjit1998"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GithubSVG style={{ height: "30px", width: "30px" }} />
           </a>
         </figure>
 
@@ -169,7 +169,7 @@ function Sidebar() {
             <span>Durgapur, India</span>
           </div>
           <div className="sidebar__email">majumderdebjit@gmail.com</div>
-          <div className="sidebar__phone">8900245728 / 9164510003</div>
+          <div className="sidebar__phone">8900245728 / 9064510003</div>
         </div>
 
         <div className="sidebar__contact" onClick={showModal}>

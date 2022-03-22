@@ -102,11 +102,11 @@ function Resume() {
               TATA Consultancy Servies(TCS)
             </h4>
             <p className="resume-card__name">
-              Web development and production support
+              Frontend Web Developer on QMIN project
             </p>
-            <p className="resume-card__details">
-              I work as a web developer and production support executive at TCS
-              Digital on the QMIN app project.
+            <h4 className="resume-card__title">Connectwise LLP</h4>
+            <p className="resume-card__name">
+              Frontend Web Developer on Automate To Web project
             </p>
           </div>
         </div>

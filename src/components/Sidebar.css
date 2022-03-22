@@ -62,6 +62,11 @@
   border-radius: 3rem;
 }
 
+.sidebar__social-icons {
+  display: flex;
+  align-items: center;
+}
+
 .sidebar__social-icons .sidebar__icon {
   margin-right: 1rem;
 }
