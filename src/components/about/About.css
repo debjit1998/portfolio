@@ -3,6 +3,10 @@
   overflow-y: auto;
 }
 
+.about::-webkit-scrollbar {
+  display: none;
+}
+
 .about__container {
   background-color: #dbdddf;
   padding: 2rem;

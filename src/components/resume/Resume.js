@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Bar from "./Bar";
 import "./Resume.css";
 import react from "../../assets/icons/react.svg";
@@ -79,7 +80,13 @@ const tools = [
 
 function Resume() {
   return (
-    <div className="container resume">
+    <motion.div
+      className="container resume"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="row">
         <div className="col-lg-6 resume-card">
           <h3 className="resume-card__heading">Education</h3>
@@ -117,7 +124,7 @@ function Resume() {
           <h3 className="resume-language__heading">Languages and Frameworks</h3>
           <div className="resume-language__body pt-3">
             {languages.map((l, i) => (
-              <Bar value={l} key={i} />
+              <Bar value={l} key={i} index={i} />
             ))}
           </div>
         </div>
@@ -125,12 +132,12 @@ function Resume() {
           <h3 className="resume-language__heading">Tools and Softwares</h3>
           <div className="resume-language__body pt-3">
             {tools.map((t, i) => (
-              <Bar value={t} key={i} />
+              <Bar value={t} key={i} index={i} />
             ))}
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

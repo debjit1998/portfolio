@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Project from "./ProjectCard";
 import mern from "../../assets/projects_images/mern.jpg";
 import portfolio from "../../assets/projects_images/portfolio.JPG";
@@ -38,13 +39,19 @@ const projects_data = [
 
 function Projects() {
   return (
-    <div className="container projects">
+    <motion.div
+      className="container projects"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="row">
         {projects_data.map((p, i) => (
-          <Project p={p} key={i} />
+          <Project p={p} key={i} index={i} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -1,4 +1,3 @@
-import { Route, Switch } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Home from "./components/Home";
 
@@ -8,9 +7,7 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <Switch>
-        <Route component={Home} path="/" exact />
-      </Switch>
+      <Home />
     </>
   );
 }

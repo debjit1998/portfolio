@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import api from "../../assets/icons/api.svg";
 import computer from "../../assets/icons/computer.svg";
 import repair from "../../assets/icons/repair.svg";
@@ -45,7 +46,13 @@ const skills = [
 
 function About() {
   return (
-    <div className="about">
+    <motion.div
+      className="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <h4 className="about__intro">
         I describe myself as someone who is hard working, a quick learner and
         loves solving problems using simple and scalable solutions
@@ -53,8 +60,14 @@ function About() {
       <div className="container-fluid about__container">
         <h3 className="about__heading">What I Offer</h3>
         <div className="row">
-          {skills.map((skill, i) => (
-            <div className="col-lg-6" key={i}>
+          {skills.map((skill, index) => (
+            <motion.div
+              className="col-lg-6"
+              key={index}
+              initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.3 }}
+            >
               <div className="skill-card">
                 <img
                   src={skill.icon}
@@ -66,11 +79,11 @@ function About() {
                   <p className="skill-card__content">{skill.about}</p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
